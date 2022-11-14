@@ -1,0 +1,10 @@
+// SHOPIFY STOREFRONT
+export const API_URL = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN
+export const STOREFRONT_TOKEN =
+  process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN
+
+// COOKIES
+
+export const SHOPIFY_CHECKOUT_URL_COOKIE = 'shopify_checkoutUrl'
+export const SHOPIFY_CART_ID_COOKIE = 'shopify_cartId'
+export const SHOPIFY_COOKIE_EXPIRE = 10

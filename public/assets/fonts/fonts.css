@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Black.woff');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Black.woff2');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-BlackItalic.woff');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-BlackItalic.woff2');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Bold.woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Bold.woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-BoldItalic.woff');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-BoldItalic.woff2');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Light.woff');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Light.woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-LightItalic.woff');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-LightItalic.woff2');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Medium.woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Medium.woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-MediumItalic.woff');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-MediumItalic.woff2');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Thin.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Regular.woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-RegularItalic.woff');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-RegularItalic.woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Semibold.woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Semibold.woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-SemiboldItalic.woff');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-SemiboldItalic.woff2');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Thin.woff');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-Thin.woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-ThinItalic.woff');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marfa';
+  src: url('/assets/fonts/Marfa/ABCMarfa-ThinItalic.woff2');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+/* END OF MARFA FONTS */
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-Regular.woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-Italic.woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-Medium.woff2');
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-MediumItalic.woff2');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-SemiBold.woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-SemiBoldItalic.woff2');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-Bold.woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-BoldItalic.woff2');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-ExtraBold.woff2');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-ExtraBoldItalic.woff2');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-Black.woff2');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Monument Grotesk';
+  src: url('/assets/fonts/Monument_Grotesk/ABCMonumentGrotesk-BlackItalic.woff2');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}

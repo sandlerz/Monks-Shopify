@@ -1,0 +1,199 @@
+@import 'styles/variables.scss';
+@import 'styles/media-queries.scss';
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+
+  @include for-size($small) {
+    gap: 50px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.swiper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -5px;
+
+  span {
+    padding-top: 5px;
+    width: 13.5%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  max-width: 60%;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.counterContainer {
+  display: flex;
+  border: 1px $black solid;
+  justify-content: space-between;
+  max-width: 120px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.counterBtn {
+  width: 40px;
+  cursor: pointer;
+}
+
+.counterBtn,
+.counter {
+  display: grid;
+  place-content: center;
+  font-weight: 300;
+  user-select: none;
+  font-size: 16px;
+}
+
+.subscribeContainer {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 25px;
+  cursor: pointer;
+}
+
+.checkedContainer {
+  background-color: #d8eac1;
+}
+
+.notChecked {
+  opacity: 0.6;
+}
+
+.radioBtn {
+  input:checked + span svg {
+    color: $secondary2;
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.optionPurchaseName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+
+  & > span {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+
+.optionsPurchasePrice {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.textGreen {
+  color: $secondary2;
+}
+
+.subscribeOptionsContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.subscribeOptionsTitle {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.subscribeOptions {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.subscribeOptionsValue {
+  cursor: pointer;
+  flex: 1;
+  display: grid;
+  place-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  border: 1px solid $black;
+}
+
+.cartBtn {
+  min-width: 100%;
+  max-height: 50px;
+  border-width: 1px;
+  margin-bottom: 20px;
+}
+
+.subscribe {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.productDescription {
+  margin-bottom: 30px;
+  p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  span {
+    font-weight: 300;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ingredients {
+  white-space: pre-wrap;
+}

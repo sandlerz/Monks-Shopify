@@ -1,0 +1,28 @@
+@import 'styles/media-queries.scss';
+
+.swiper {
+  width: 100%;
+}
+
+.arrowsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+
+  @include for-size($small) {
+    margin-top: 25px;
+  }
+}
+
+.leftArrow {
+  transform: rotate(180deg);
+}
+
+.leftArrow,
+.rightArrow {
+  cursor: pointer;
+}
+
+.disableArrow {
+  opacity: 0.2;
+}

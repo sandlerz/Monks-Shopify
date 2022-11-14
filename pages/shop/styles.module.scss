@@ -1,0 +1,13 @@
+@import 'styles/media-queries.scss';
+
+.gap {
+  gap: 30px;
+
+  @include for-size($medium) {
+    gap: 25px;
+  }
+
+  @include for-size($large) {
+    gap: 60px;
+  }
+}

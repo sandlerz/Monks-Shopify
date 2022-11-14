@@ -1,0 +1,102 @@
+@import 'styles/typography.scss';
+@import 'styles/variables.scss';
+@import 'styles/media-queries.scss';
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 90vw;
+  max-width: 375px;
+  height: 597px;
+  text-align: center;
+  padding: 10px;
+
+  @include for-size($small) {
+    display: grid;
+    place-content: center;
+    padding: 0;
+    width: 100vw;
+    max-width: 800px;
+    height: 424px;
+  }
+
+  h2 {
+    @include font-size(36px, 36px);
+    max-width: 290px;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    @include for-size($small) {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    @include font-size(16px, 22px);
+    font-weight: 400;
+    max-width: 380px;
+    margin-bottom: 20px;
+
+    @include for-size($small) {
+      margin-bottom: 30px;
+    }
+  }
+
+  input {
+    @include font-size(16px, 16px);
+    width: 100%;
+    height: 48px;
+    border: 2px solid $gray;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 15px;
+    background-color: $white;
+
+    @include for-size($small) {
+      background-color: transparent;
+      width: 282px;
+    }
+  }
+
+  input::placeholder {
+    color: $black;
+  }
+
+  .btn {
+    max-width: 100%;
+    max-height: 55px;
+
+    @include for-size($small) {
+      max-width: 282px;
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 0.6;
+    transition: 0.3s opacity;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.imgContainer {
+  span {
+    z-index: -1;
+  }
+}
+
+.bold {
+  font-weight: 600;
+  font-size: inherit;
+}

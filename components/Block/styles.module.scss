@@ -1,0 +1,100 @@
+@import 'styles/media-queries.scss';
+@import 'styles/media-queries.scss';
+
+.container {
+  position: relative;
+}
+
+.image {
+  z-index: -10;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.imageLoad {
+  opacity: 1;
+}
+
+.bodyContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16.5px;
+}
+
+.subTitle {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0.1px 0 0 currentColor;
+}
+
+.ctaLabel {
+  font-weight: 600;
+}
+
+.layoutA {
+  height: 656px;
+
+  @include for-custom-size(25em) {
+    height: 500px;
+  }
+
+  @include for-size($small) {
+    height: 312px;
+  }
+
+  @include for-size($large) {
+    height: 21.67vw;
+  }
+
+  .bodyContainer {
+    padding: 56px 36px 0;
+
+    @include for-size($small) {
+      padding: unset;
+      margin-top: 4.517vw;
+      margin-left: 46.073vw;
+      max-width: 471px;
+    }
+
+    .title {
+      max-width: 291px;
+    }
+  }
+}
+
+.layoutB {
+  height: 100%;
+
+  @include for-size($small) {
+    height: 416px;
+  }
+
+  @include for-size($large) {
+    height: 28.44vw;
+  }
+
+  .bodyContainer {
+    padding: 60vw 36px 20px;
+
+    @include for-size($small) {
+      padding: unset;
+      margin-top: 8vw;
+      margin-left: 13vw;
+      max-width: 486px;
+    }
+  }
+}

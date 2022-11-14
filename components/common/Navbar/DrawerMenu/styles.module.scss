@@ -1,0 +1,91 @@
+@import 'styles/variables.scss';
+@import 'styles/typography.scss';
+@import 'styles/media-queries.scss';
+
+.mobileMenu {
+  position: relative;
+  padding: 120px 0 32px;
+  width: 100vw;
+  max-width: 448px;
+  height: 100vh;
+  background-color: $primary;
+  color: $black;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.mainNavLinks {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 24px;
+  border-top: 1px solid #ddd;
+  color: #181818;
+  height: 69px;
+}
+
+.shopTitle {
+  height: 69px;
+}
+
+.shopLink {
+  font-weight: 500;
+  border-top: 1px solid #ddd;
+  color: #181818;
+
+  padding-left: 24px;
+  width: 100%;
+}
+
+.linkSecondary {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  height: 40px;
+}
+
+.shopArrowCenter {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.shopNavContainer {
+  & > :not(:last-child) {
+    border-bottom: #ddd 1px solid;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.arrowIconRotate{
+  transform: rotate(180deg);
+}
+
+.comingSoon{
+  color: $secondary2;
+  margin-left: 15px;
+}

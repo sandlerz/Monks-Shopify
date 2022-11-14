@@ -1,0 +1,14 @@
+@import 'styles/typography.scss';
+
+.btnContainer {
+  display: flex;
+  gap: 7px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.font {
+  @include font-style-B5;
+}

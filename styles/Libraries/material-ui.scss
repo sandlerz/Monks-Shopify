@@ -1,0 +1,33 @@
+.MuiAccordion-root {
+  background-color: transparent;
+  box-shadow: none;
+
+  &::before {
+    background-color: transparent;
+  }
+
+  .MuiAccordionSummary-root {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    .MuiAccordionSummary-content {
+      margin: 0;
+    }
+  }
+
+  .MuiCollapse-root {
+    .MuiAccordionDetails-root {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.materialIconRotate {
+  transition: 0.3s transform ease;
+}
+
+.Mui-expanded .materialIconRotate{
+  transform: rotate(-180deg);
+}

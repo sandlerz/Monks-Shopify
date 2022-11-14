@@ -1,0 +1,41 @@
+.yotpo .standalone-bottomline.star-clickable,
+.yotpo .standalone-bottomline .star-clickable {
+  align-items: center;
+  gap: 5px;
+}
+
+.yotpo .yotpo-icon-star {
+  font-size: 22px !important;
+}
+
+.yotpo .text-m {
+  font-size: 15px !important;
+  text-decoration: underline !important;
+}
+
+.yotpoShop {
+  margin: 15px 0;
+}
+
+.yotpoShop .standalone-bottomline {
+  display: grid;
+  place-content: center;
+}
+
+#homePage_Yopto {
+  .yotpoShop {
+    margin: 0;
+  }
+
+  .star-clickable {
+    & > .text-m,
+    & > .yotpo-clr {
+      display: none;
+    }
+  }
+
+  .yotpo-icon-star {
+    color: #e3af6a;
+    font-size: 17px !important;
+  }
+}

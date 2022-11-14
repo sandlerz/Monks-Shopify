@@ -1,0 +1,153 @@
+@import 'styles/variables.scss';
+@import 'styles/media-queries.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100vw;
+  max-width: 40rem;
+}
+
+.isEmpty {
+  background-color: $black;
+  color: $white;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.headerCloseBtn {
+  cursor: pointer;
+}
+
+.headerInnerContainer {
+  display: flex;
+  align-items: center;
+  height: 3.4rem;
+}
+
+.isEmptyContainer {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.isEmptyContainerIcon {
+  border: dashed $white 1px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: $black;
+
+  span {
+    filter: invert(100%) sepia(6%) saturate(3418%) hue-rotate(234deg)
+      brightness(115%) contrast(105%);
+  }
+}
+
+.isEmptyHeader {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.isEmptyBtn {
+  border-color: $white;
+  max-width: 100%;
+}
+
+.cartContainer {
+  color: $white;
+
+  .cartItemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5rem 0 2rem;
+  }
+
+  .cartCheckoutContainer {
+    .codeDiscountContainer {
+      border-top: 1px solid $white;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem 0;
+
+      .removeDiscountContainer {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+
+        .removeDiscountBtn {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(82deg)
+            brightness(108%) contrast(101%);
+        }
+      }
+
+      .inputContainer {
+        background-color: $white;
+        color: $black;
+        padding: 0 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .input {
+          font-size: 18px;
+          height: 4rem;
+          width: 90%;
+
+          &::placeholder {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .subtotalContainer,
+    .totalContainer {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+    }
+
+    .subtotalContainer {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .totalContainer {
+      font-size: 20px;
+      border-top: 1px solid $white;
+      padding: 2rem 0;
+      font-weight: 600;
+    }
+
+    .cartBtn {
+      height: 4.8rem;
+      border: 1px solid $black;
+
+      &:hover,
+      &:active {
+        border: 1px solid $white;
+      }
+    }
+  }
+}

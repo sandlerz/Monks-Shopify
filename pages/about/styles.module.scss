@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+@import 'styles/media-queries.scss';
+
+.articleContainer {
+  background-color: $white;
+  padding: 30px;
+  padding-top: 40px;
+
+  @include for-size($small) {
+    padding: 60px;
+    padding-right: 105px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  span {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}

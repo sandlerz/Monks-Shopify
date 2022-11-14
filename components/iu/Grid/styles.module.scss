@@ -1,0 +1,69 @@
+@import 'styles/media-queries.scss';
+@import 'styles/variables.scss';
+
+.container {
+  text-align: center;
+
+  .title {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 48px;
+    margin-bottom: 45px;
+  }
+
+  .cta {
+    margin-top: 20px;
+    justify-content: center;
+
+    @include for-size($small) {
+      margin-top: 70px;
+    }
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+
+  & > * {
+    overflow: hidden;
+  }
+}
+
+.LayoutA {
+  background-color: $primary;
+  padding: 30px 32px;
+
+  @include for-size($small) {
+    padding: 74px 0;
+  }
+
+  .gridContainer {
+    max-width: 1220px;
+    margin: auto;
+    margin-bottom: 40px;
+    gap: 20px;
+
+    & > * {
+      grid-column: span 4;
+
+      @include for-size($small) {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+.LayoutB {
+  .gridContainer {
+    gap: 30px;
+
+    & > * {
+      grid-column: span 8;
+
+      @include for-size($small) {
+        grid-column: span 4;
+      }
+    }
+  }
+}

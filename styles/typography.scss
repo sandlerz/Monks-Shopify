@@ -1,0 +1,83 @@
+@mixin font-size($size, $lineHeight) {
+  font-size: (calc($size / 10px)) * 1rem;
+  line-height: calc($lineHeight / $size);
+}
+
+@mixin font-family-basis($weight) {
+  font-family: 'Marfa', Helvetica, Arial, serif;
+  font-weight: $weight;
+}
+
+@mixin font-style-H1 {
+  @include font-size(50px, 74px);
+}
+
+@mixin font-style-H2 {
+  @include font-size(40px, 50px);
+}
+
+@mixin font-style-H3 {
+  @include font-size(28px, 35px);
+}
+
+@mixin font-style-H4 {
+  @include font-size(30px, 37px);
+}
+
+@mixin font-style-H5 {
+  @include font-size(24px, 25px);
+}
+
+@mixin font-style-H6 {
+  @include font-size(17px, 17px);
+}
+
+@mixin font-style-B1 {
+  @include font-family-basis(100);
+  @include font-size(30px, 45px);
+}
+
+@mixin font-style-B2 {
+  @include font-family-basis(300);
+  @include font-size(25px, 35px);
+}
+
+@mixin font-style-B3 {
+  @include font-family-basis(300);
+  @include font-size(20px, 35px);
+}
+
+@mixin font-style-B4 {
+  @include font-family-basis(600);
+  @include font-size(16px, 16px);
+}
+
+@mixin font-style-B5 {
+  @include font-family-basis(500);
+  @include font-size(16px, 24px);
+}
+
+@mixin font-style-B6 {
+  @include font-family-basis(300);
+  @include font-size(16px, 24px);
+}
+
+@mixin font-style-B7 {
+  @include font-family-basis(400);
+  @include font-size(18px, 18px);
+}
+
+@mixin font-style-B8 {
+  @include font-family-basis(400);
+  @include font-size(17px, 17px);
+}
+
+@mixin font-style-B9 {
+  @include font-family-basis(400);
+  @include font-size(16px, 16px);
+}
+
+@mixin font-style-caption {
+  @include font-family-basis(600);
+  @include font-size(15px, 16px);
+}

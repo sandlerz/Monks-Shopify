@@ -1,0 +1,119 @@
+@import 'styles/media-queries.scss';
+@import 'styles/variables.scss';
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+
+  @include for-size($small) {
+    max-height: 624px;
+    min-height: 624px;
+    text-align: left;
+  }
+}
+
+.image {
+  z-index: -10;
+  opacity: 0;
+  transition: opacity 0.5s;
+  user-select: none;
+}
+
+.imageload {
+  opacity: 1;
+}
+
+.bodyContainer {
+  position: relative;
+  z-index: 1;
+  color: $off_black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  @include for-size($small) {
+    margin-top: 170px;
+    margin-left: 12.569vw;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    color: $off_black;
+    margin: 0;
+    margin-bottom: 9px;
+
+    @include for-size($small) {
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $off_black;
+    max-width: 80%;
+    margin-bottom: 24px;
+    margin-inline: auto;
+
+    @include for-size($small) {
+      margin-bottom: 43px;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 400px;
+      margin-inline: 0;
+    }
+
+    span {
+      font-size: inherit;
+    }
+  }
+
+  .btn {
+    height: 56px;
+    max-width: 280px;
+    margin-bottom: 32px;
+
+    @include for-size($small) {
+      margin-inline: 0;
+    }
+  }
+}
+
+.getOff {
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: $off_black;
+  color: $white;
+  border-radius: 20px;
+  padding: 8px 18px;
+
+  .textOff {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .closeIconOff {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color: $white;
+    background-color: $secondary2;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-content: center;
+  }
+}

@@ -1,0 +1,13 @@
+@import 'styles/variables.scss';
+
+.mailBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 18px;
+  z-index: 1000;
+  background-color: $white;
+  min-width: 42px;
+  min-height: 42px;
+  display: grid;
+  place-content: center;
+}
